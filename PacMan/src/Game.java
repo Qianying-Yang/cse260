@@ -16,6 +16,7 @@ public class Game {
 	private static JFrame frame = new JFrame();
 	private static GameData board = new GameData();
 	private static GameCanvas map = new GameCanvas(board);
+	//private static WelcomePane welcome = new WelcomePane(frame);
 	
 	public static void main(String[] args) {
 		
@@ -23,7 +24,7 @@ public class Game {
 		frame.setSize(700, 800);
 		frame.setVisible(true);
 		frame.setBackground(Color.BLACK);
-		//frame.add(welcome());
+		//frame.add(welcome);
 		
 		frame.add(map);
 		frame.addKeyListener(board.getP());	
@@ -35,7 +36,6 @@ public class Game {
 			}catch(InterruptedException e){
 				
 			}
-			
 		}
 		if(board.gameOver() == 1) {
 			JOptionPane.showMessageDialog(frame,

@@ -30,7 +30,7 @@ public class WelcomePane extends JPanel {
 		
 		gameButton();
 		aboutButton();
-		statButton();
+		//statButton();
 		this.frame = frame;
 	}
 
@@ -51,21 +51,21 @@ public class WelcomePane extends JPanel {
 		
 		this.add(start_button);
 		
-		con_button.setBackground(Color.BLACK);
-		con_button.setFont(new Font("Chalkduster", Font.PLAIN, 24));
-		con_button.setForeground(Color.BLUE);
-		//con_button.setOpaque(true);
-		con_button.setBorderPainted(false);
-		
-		con_button.addActionListener(new ActionListener() {
-	         @Override
-	         public void actionPerformed(ActionEvent arg0) {
-	            //loads previous game
-	        	 System.out.println("Continue Game");
-	         }
-	      });
-		
-		this.add(con_button);
+//		con_button.setBackground(Color.BLACK);
+//		con_button.setFont(new Font("Chalkduster", Font.PLAIN, 24));
+//		con_button.setForeground(Color.BLUE);
+//		//con_button.setOpaque(true);
+//		con_button.setBorderPainted(false);
+//		
+//		con_button.addActionListener(new ActionListener() {
+//	         @Override
+//	         public void actionPerformed(ActionEvent arg0) {
+//	            //loads previous game
+//	        	 System.out.println("Continue Game");
+//	         }
+//	      });
+//		
+//		this.add(con_button);
 
 	}
 	
@@ -89,22 +89,22 @@ public class WelcomePane extends JPanel {
 		this.add(about_button);
 	}
 	
-	private void statButton() {
-		stats_button.setBackground(Color.BLACK);
-		stats_button.setFont(new Font("Chalkduster", Font.PLAIN, 24));
-		stats_button.setForeground(Color.BLUE);
-		//stats_button.setOpaque(true);
-		stats_button.setBorderPainted(false);
-		
-		stats_button.addActionListener(new ActionListener() {
-	         @Override
-	         public void actionPerformed(ActionEvent arg0) {
-	            //stats of the game.
-	        	 System.out.println("Stats");
-	         }
-	      });
-		
-		this.add(stats_button);
-	}
+//	private void statButton() {
+//		stats_button.setBackground(Color.BLACK);
+//		stats_button.setFont(new Font("Chalkduster", Font.PLAIN, 24));
+//		stats_button.setForeground(Color.BLUE);
+//		//stats_button.setOpaque(true);
+//		stats_button.setBorderPainted(false);
+//		
+//		stats_button.addActionListener(new ActionListener() {
+//	         @Override
+//	         public void actionPerformed(ActionEvent arg0) {
+//	            //stats of the game.
+//	        	 System.out.println("Stats");
+//	         }
+//	      });
+//		
+//		this.add(stats_button);
+//	}
 
 }
